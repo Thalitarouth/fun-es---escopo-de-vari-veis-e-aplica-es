@@ -1,0 +1,20 @@
+
+
+PI = 3.1416
+print("\n")
+def converte_radiano(graus):
+    PI = 3.14
+    radianos = (graus*PI)/180
+    print("o valor da variavel local PI = ", PI)
+    print("Alterando o valor da variável global - 'variável_global'")
+    global variável_global
+    variável_global = "escopo de variáveis"
+    print("Novo valor da variável global - 'variável_global'= ", variável_global)
+    return radianos
+
+print("90º equivale a", converte_radiano (90),"radianos")
+print("180º equivale a", converte_radiano(180),"radianos")
+print("270º equivale a ", converte_radiano(270), "radiano")
+print("360º equivale a", converte_radiano(360), "radiano")
+
+print("\nO VALOR GLOBAL DE PI NÃO É ALTERADO PELA FUNÇÃO 'converte_radiano' \ne continua PI =", PI)
