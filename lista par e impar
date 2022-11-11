@@ -1,0 +1,23 @@
+
+print("\n Exercicio: Funções como paramêtros de outras funções ")
+def verifica_condição(números, condição, função):
+    for j in números:
+        if condição(j):
+            função(j)
+            
+def imprime_lista(i):
+    print(f" elemento da lista {i}")
+
+def verifica_par(k):
+    return k % 2 ==0
+
+def verifica_ímpar(m):
+    return not verifica_par(m)
+
+lista_números = [0,1,2,3,4,5,6,7,8,9]
+verifica_condição(lista_números, verifica_par, imprime_lista) 
+print("\n")
+verifica_condição(lista_números,verifica_ímpar, imprime_lista) 
+
+          
+            
