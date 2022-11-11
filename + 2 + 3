@@ -1,0 +1,23 @@
+
+def maior_dois(a,b):
+    if a>b:
+        return a
+    if b>a:
+        return b
+    else:
+        b=a
+        print("não há maior, todos valores iguais")
+        
+def maior_três(c,d,e):
+    f = maior_dois(c,d)
+    g = maior_dois(e,f)
+    return g
+
+
+print("MAIOR ENTRE 3 e 7 = ", maior_dois(3,7))
+print("MAIOR ENTRE 0 e -8 = ",maior_dois (-8,0))
+print("MAIOR ENTRE -10, 18 e 1 = ",maior_dois (-10,18,1))
+print("MAIOR ENTRE 2 e 2 = ", maior_dois (2,2))
+print("MAIOR ENTRE -5,-5,-5 =",maior_três(-5,-5,-5))
+print("MAIOR ENTRE 1,2 e 3 =",maior_três(3,2,1)) 
+      
